@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "example",
+    "slug": "example",
+    "version": "1.4.0",
+    "orientation": "portrait",
+    "icon": "./assets/iosLogo.png",
+    "splash": {
+      "image": "./assets/splash-02.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "notification": {
+      "icon": "./assets/iconoplaystrore.png"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./local/path/to/iconoplaystror.png",
+          "color": "#ffffff",
+          "sounds": ["./local/path/to/mySound.wav", "./local/path/to/myOtherSound.wav"],
+          "mode": "production"
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.example",
+      "buildNumber":"1.4.0"
+      
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/iconoplaystrore.png",
+        "backgroundColor": "#FFFFFF"
+      },
+  
+      "versionCode":5,
+      "package": "com.example.example",
+      "permissions":[ " RECORD_AUDIO", "ACCESS_FINE_LOCATION","READ_PHONE_STATE","NOTIFICATIONS"]
+    }, 
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
